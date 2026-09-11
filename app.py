@@ -26,7 +26,7 @@ st.set_page_config(
 )
 
 APP_TITLE = "CyberLawGPT"
-PDF_FILE_ID = "1Am6tbueO-GcUvGNa4vb4yl0-xpMsq3ZW"
+PDF_FILE_ID = "1_uvoQ6ptssIsmhlGmHobEcNs0dhD7fOW"
 PDF_PATH = Path("cyber_law_source.pdf")
 
 # Lightweight local embedding model; no paid embedding API is required.
