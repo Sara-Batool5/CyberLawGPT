@@ -25,7 +25,7 @@ DEFAULT_PDF_URL = (
     "1Am6tbueO-GcUvGNa4vb4yl0-xpMsq3ZW/view?usp=sharing"
 )
 EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
-DEFAULT_GROQ_MODEL = "llama-3.1-8b-instant"
+DEFAULT_GROQ_MODEL = "openai/gpt-oss-120b"
 CACHE_DIR = ".cyberlaw_cache"
 PDF_PATH = os.path.join(CACHE_DIR, "cyber_law_source.pdf")
 INDEX_PATH = os.path.join(CACHE_DIR, "cyber_law.index")
@@ -359,8 +359,7 @@ with st.sidebar:
     model_name = st.selectbox(
         "Groq model",
         [
-            "llama-3.1-8b-instant",
-            "llama-3.3-70b-versatile",
+            "openai/gpt-oss-120b",
         ],
         index=0,
     )
